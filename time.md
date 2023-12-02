@@ -1,10 +1,12 @@
 
-## First run on GPU and CPU  
+## model 運行結果
+
+**Basic**
 **CPU:13500**  
 batch-size: 32  
 time/batch: >11m  
 
-**GPU:4070:**  
+**GPU:4070**  
 batch-size: 32  
 time/batch: 8~9m  
 
