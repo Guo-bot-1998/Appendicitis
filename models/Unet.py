@@ -54,14 +54,18 @@ class FC(nn.Module):
             nn.ReLU(inplace=True),
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=2, stride=2),
+            nn.Conv2d(128, 256, kernel_size=3, padding=1),
+            nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2)
         )
     
-        self.fc = nn.Linear(256 * 256 * 128, 1)  # x 和 y 是經過 encoder 處理後的特徵圖尺寸
+        self.fc = nn.Linear(128 * 128 * 256, 1)  # x 和 y 是經過 encoder 處理後的特徵圖尺寸
  
 
     def forward(self, x):
         x = self.encoder(x)
         x = torch.flatten(x, 1)
         x = self.fc(x)
+        x = torch.sigmoid(x)
         return x
