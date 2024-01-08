@@ -13,7 +13,7 @@ Colab不方便做時的選擇，只用Colab的話可無視其他程式碼。
 
 `test`
 
-<pre>
+```
 AOCR2024
     ├── mask_bundle
     │   ├── Zx00AD16F8B97A53DE6E7CFE260BDF122F0E655659A3DF1628_label.nii
@@ -30,7 +30,7 @@ AOCR2024
     ├── TrainValid_Mask
     │   └── train_mask
     └── TrainValid_split.csv
-</pre>
+```
 存放於appendix2024ai@gmail.com之Google drive，colab可直接掛載   
 <code>params</code>存放不同模型參數與hyper-parameter  
 <code>mask_bundle</code>存放CT cut與對應mask  
