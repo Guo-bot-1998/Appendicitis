@@ -1,4 +1,4 @@
-# 程式碼
+2# 程式碼
 皆上傳至[github](https://github.com/Guo-bot-1998/Appendicitis)
 
 Colab:   
@@ -10,6 +10,8 @@ Colab不方便做時的選擇，只用Colab的話可無視其他程式碼。
 
 # 資料存放
 資料夾結構:
+
+* test
 
 <pre>
 AOCR2024
